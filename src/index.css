@@ -22,7 +22,7 @@
 	}
 
 	.page-no {
-		@apply tablet:hidden md:block  font-Barlow mr-[6px] tracking-[2.7px] font-bold;
+		@apply block tablet:hidden md:block  font-Barlow mr-[6px] tracking-[2.7px] font-bold;
 	}
 	.navlink span:nth-child(2) {
 		@apply py-2 tracking-[2.7px] uppercase  cursor-pointer font-Barlow;
