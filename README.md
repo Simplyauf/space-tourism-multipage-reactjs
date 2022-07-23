@@ -8,7 +8,7 @@
 
 #Frontend Mentor
 
-This is a solution to the [space tourism multipage website](https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Space tourism website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/space-tourism-multipage-website-gRWj1URZ3). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ---
 
@@ -21,6 +21,6 @@ This is a solution to the [space tourism multipage website](https://www.frontend
 
 ## Live url
 
--   Live Site URL: [space tourism multipage website](https://interactive-comment-section-auf.netlify.app/)
+-   Live Site URL: [space tourism multipage website](https://space-tourism-multipage-react/)
 
 ## Screenshots
