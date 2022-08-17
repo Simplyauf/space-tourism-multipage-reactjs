@@ -21,6 +21,6 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
 
 ## Live url
 
--   Live Site URL: [space tourism multipage website](https://space-tourism-multipage-react/)
+-   Live Site URL: [space tourism multipage website](https://space-tourism-multipage-react.netlify.app/)
 
 ## Screenshots
