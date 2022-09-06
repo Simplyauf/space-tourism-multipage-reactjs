@@ -4,8 +4,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { DestinationPageTabs } from "./destinationPageTabs";
 import { data } from "../data";
-import { motion } from "framer-motion";
-import { useAnimateElemInView } from "../../utils/useAnimateElemInView";
+import { DestinationImgSection } from "./destinationPageImgSection";
 
 const DestinationPage = ({ entireSectionParentElement }) => {
   const [destinationPageDatas, setDestinationPageDatas] = useState({
@@ -17,6 +16,7 @@ const DestinationPage = ({ entireSectionParentElement }) => {
   });
   const { name, images, description, distance, travel } = destinationPageDatas;
 
+  // check if bodyDom id is set to a certain page to apply background Img
   if (entireSectionParentElement) {
     entireSectionParentElement.id = "destinationsPage";
   }
@@ -25,9 +25,6 @@ const DestinationPage = ({ entireSectionParentElement }) => {
     setDestinationPageDatas(data.destinations[0]);
     console.log(data.destinations[0]);
   }, []);
-
-  //use animate hooks
-  const [ref, control, visibleVariant] = useAnimateElemInView();
 
   const handleTabsClick = (e) => {
     e.currentTarget.parentElement.childNodes.forEach((destinationTabsElemContainer) => {
@@ -50,20 +47,7 @@ const DestinationPage = ({ entireSectionParentElement }) => {
           <span class="opacity-50 text-secondaryColor">01</span>
           <span class="ml-2 text-secondaryColor tracking-[2.75px]">PICK YOUR DESTINATION</span>
         </li>
-        <div class="w-[57%] h-[227px] tablet:h-[250px] mdHeight:h-[280px] lgHeight:h-[310px] mt-4 lg:mt-16 mx-auto">
-          <motion.img
-            ref={ref}
-            initial="hidden"
-            animate={control}
-            transition={{ type: "spring", stiffness: 100 }}
-            variants={visibleVariant}
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.9 }}
-            class="w-[100%] h-[100%] mx-auto current-tab-img"
-            src={images.png}
-            alt="destination-img"
-          />
-        </div>
+        <DestinationImgSection currentImgUrl={images.png} />
       </article>
       <article class="lg:w-[50%] lg:flex lg:flex-col lg:items-start lg:mt-28">
         <DestinationPageTabs handleTabsClick={handleTabsClick} />
