@@ -2,7 +2,7 @@ import { data } from "../data";
 import "../../index.css";
 import { motion } from "framer-motion";
 
-export const DestinationImg = ({ currentImgUrl }) => {
+export const DestinationImgSection = ({ currentImgUrl }) => {
   console.log(currentImgUrl);
 
   return (
